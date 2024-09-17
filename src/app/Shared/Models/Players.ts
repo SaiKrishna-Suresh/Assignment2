@@ -3,5 +3,5 @@ export interface Players{
   firstName: string;
   lastName: string;
   country: string;
-  average: number;//optional
+  average?: number;
 }

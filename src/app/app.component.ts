@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {Players} from "./Shared/Models/Players";
+
 
 @Component({
   selector: 'app-root',
@@ -10,4 +12,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Assignment2';
+  player1:Players []=[{rank:1,firstName:"Virat",lastName:"kohli",country:"India",average:55},
+  {rank:2,firstName:"Steve",lastName:"Smith",country:"Australia",average:49}];
+
 }

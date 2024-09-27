@@ -1,1 +1,4 @@
-<p>content-list works!</p>
+<div class="content-list">
+  <h2>{{ chosenContent }} List</h2>
+  <app-content-list-item *ngFor="let item of contentItems" [content]="item"></app-content-list-item>
+</div>

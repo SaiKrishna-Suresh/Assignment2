@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, input, Input} from '@angular/core';
 import { Players } from '../Shared/Models/Players';
 import { NgIf, NgForOf } from '@angular/common';
 
@@ -10,7 +10,8 @@ import { NgIf, NgForOf } from '@angular/common';
   styleUrls: ['./content-list-item.component.css']
 })
 export class ContentListItemComponent {
-  @Input() content?: Players;
+
+  @Input() content!: Players;
 
 
 }
